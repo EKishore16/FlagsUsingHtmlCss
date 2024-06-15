@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Flags</title>
     <style>
-      html{
-            height:80%;
+        html{
+            height:100%;
+            width:80%;
             border:5px solid #FD9B63;
-            margin:3rem ;
-            padding:1rem;
+            margin-left:10rem ;
+            padding:0rem;
             background-color: #E7D37F;
             color:#56573d ;
             font-weight: 800;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
         }
+
         h1{
             text-align: center;
             margin-bottom: 50px;
@@ -29,12 +31,15 @@
             
         }
         .wrapper{
+            margin: 2rem;
             display:grid;
-            grid-template-columns: repeat(12,120px);
-            grid-template-rows: repeat(2,200px);
+            grid-template-columns: repeat(8,120px);
+            grid-template-rows: repeat(3,120px);
             height:100%;
            
         }
+       
+        
         #flag1{
             margin:10px;
 
@@ -961,6 +966,188 @@
             position: absolute;
             margin-top: 60px;
             margin-left: 10px;  
+        }
+         
+        @media only screen and (max-width:400px){
+            html{
+                margin:0px;
+                width: 100%;
+                border:0;
+            }
+            body{
+                border: 3px solid #FD9B63;
+            }
+            .wrapper{
+                margin:0.5rem;
+                grid-template-columns: repeat(4,85px);
+                grid-template-rows: repeat(6,120px);
+            }
+
+        }
+        @media only screen and (max-width:360px){
+            body{
+                border:0;
+            }
+            .wrapper{
+                margin:0;
+            }
+
+        }
+        @media (min-width:400px) and (max-width:500px){
+
+            html{
+                margin:0px;
+                width: 100%;
+                border:0;
+            }
+            body{
+                border: 3px solid #FD9B63;
+            }
+            .wrapper{
+                margin:0.5rem;
+                padding:5px;
+                grid-template-columns: repeat(4,90px);
+                grid-template-rows: repeat(6,120px);
+            }
+
+
+        }
+
+        @media (min-width:700px) and (max-width:1000px){
+
+            html{
+                margin:5rem;
+                width: 80%;
+                border: 0;
+            }
+            body{
+                border: 5px solid #FD9B63;
+            }
+            .wrapper{
+                margin: 1rem;
+                padding:3rem;
+                grid-template-columns: repeat(4,120px);
+                grid-template-rows: repeat(6,120px);
+               
+            }
+        }
+            
+        @media (min-width:1000px) and (max-width:1070px){
+
+                html{
+                    margin-left:0;
+                    margin:1rem ;
+                    width:95%;
+                    border: 0;
+                    height: 70%;
+                }
+
+                body{
+                border: 5px solid #FD9B63;
+                margin: 0;
+                 }
+                .wrapper{
+                margin: 0;
+                padding:3rem;
+                grid-template-columns: repeat(6,150px);
+                grid-template-rows: repeat(4,120px);
+               
+            }
+
+        }
+        @media (min-width:1070px) and (max-width:1160px){
+
+            html{
+                    margin-left:2rem;
+                    margin:1rem ;
+                    width:95%;
+                    border: 0;
+                    height: 70%;
+                }
+
+                body{
+                border: 5px solid #FD9B63;
+                margin: 0;
+                 }
+                .wrapper{
+                margin: 0;
+                padding:3rem;
+                grid-template-columns: repeat(6,170px);
+                grid-template-rows: repeat(4,120px);
+               
+            }
+
+        }
+        @media (min-width:1160px) and (max-width:1230px){
+
+
+                html{
+                    margin-left:2rem;
+                    margin:1rem ;
+                    width:95%;
+                    border: 0;
+                    height: 70%;
+                }
+
+                body{
+                border: 5px solid #FD9B63;
+                margin: 0;
+                 }
+                .wrapper{
+                margin: 3rem;
+                padding:3rem;
+                grid-template-columns: repeat(6,170px);
+                grid-template-rows: repeat(4,120px);
+               
+            }
+
+        }
+        @media (min-width:1230px) and (max-width:1380px){
+
+            html{
+                    margin-left:3rem ;
+                    width:95%;
+                    border: 0;
+                    height: 70%;
+                }
+
+                body{
+                border: 10px solid #FD9B63;
+                margin: 0;
+                 }
+                .wrapper{
+
+                margin: 2rem;
+                padding:30px 120px;
+                grid-template-columns: repeat(6,170px);
+                grid-template-rows: repeat(4,120px);
+               
+            }
+
+        }
+        @media(min-width:1380px){
+
+            html{
+                    margin-left:3rem ;
+                    width:95%;
+                    border: 0;
+                    height: 70%;
+                }
+
+                body{
+                border: 10px solid #FD9B63;
+                margin: 0;
+                 }
+                .wrapper{
+
+                margin: 2rem;
+                padding:30px 120px;
+                grid-template-columns: repeat(6,180px);
+                grid-template-rows: repeat(4,120px);
+               
+            }
+
+
         }
    
     </style>
