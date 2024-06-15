@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Flags</title>
+    <style>
+        html{
+            height:60%;
+            border:5px solid #FD9B63;
+            margin:5rem;
+            padding:50px;
+            background-color: #E7D37F;
+            color:#56573d ;
+            font-weight: 800;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 0 0 5px brown,0 0 10px brown,0 0 20px brown,0 0 40px brown,0 0 80px brown;
+            color: rgb(255, 255, 255);
+        }   
+        div{
+            width:5rem;
+            height:1rem;
+            text-align: center;
+            
+        }
+        .wrapper{
+            display:grid;
+            grid-template-columns: repeat(12,120px);
+            grid-template-rows: repeat(2,200px);
+            height:100%;
+           
+        }
+        #flag1{
+            margin:10px;
+
+        }
+        #armenia1{
+            background-color:#D90012;
+        }
+        #armenia2{
+            background-color:#001489;
+        }
+        #armenia3{
+            background-color:#FF9E1B;
+
+        }
+        #flag2{
+            display:grid;
+            grid-template-columns: 2rem 3rem;
+            grid-template-rows: repeat(2,1.5rem);
+            margin:10px;
+            position:relative;
+        }
+        #benin1{
+          background-color: #008751;
+          height: 100%;
+          width:100%;
+        }
+        #benin2{
+            background-color: #FCD116;
+            height: 100%;
+            width:100%;
+        }
+        #benin3{
+            background-color: #008751;
+            height: 100%;
+            width:100%;
+        
+        }
+        #benin4{
+            background-color: #E8112D;
+            height: 100%;
+            width:100%;
+        }
+    
+        #flag2Name{
+            position:absolute;
+            top:50px;
+            left:10px;
+            
+        }
+        #flag3{
+            display:flex;
+            margin:10px;
+            position: relative;
+
+        }
+
+        #cameroon1{
+            background-color: #007A5E;
+            height:3rem;
+            width:33.3%;
+        } 
+       
+        #cameroon2{
+            height:3rem;
+            background-color:#CE1126;
+            width:33.3%;
+        }
+        #cameroon21{
+            top: 21px;
+            left: 8px;
+            transform: rotate(37deg);
+            border-bottom:4px solid #FCD116 ;
+        }
+        #cameroon21::before,#cameroon21::after{
+            border-bottom:4px solid #FCD116;
+
+        }
+
+        
+        #cameroon3{
+            height:3rem;
+            background-color:#FCD116;
+            width:33.3%;
+        }
+        #flag3Name{
+            position: absolute;
+            top:50px;
+         
+        }
+        #flag4{
+            margin:10px;
+            display: grid;
+            grid-template-columns: 2rem 3rem;
+            grid-template-rows:repeat(2,1.5rem);
+            position: relative;
+        }
+        #chile1{
+           background-color:#0032A0;
+           height: 100%;
+           width: 100%;
+        }
+        #chile2{
+            background-color:#FFFFFF;
+            height: 100%;
+            width: 100%;
+        }
+        #chile3,#chile4{
+            background-color:#DA291C;
+            height: 100%;
+            width: 100%;
+        }
+        #chile5{
+            position: absolute;
+            top: 9px;
+            left: 7px;
+            border-left:8px solid transparent;
+            border-bottom:6px solid white;
+            border-right:8px solid transparent;
+
+        }
+        #chile5::before,#chile5::after{
+            border-left:8px solid transparent;
+            border-bottom:6px solid white;
+            border-right:8px solid transparent;
+            left:-8px;
+
+        }
+        #flag4Name{
+            position: absolute;
+            top:50px;
+            left:20px;
+        }
+
+        #flag5{
+            display:flex;
+            margin:10px;
+            position:relative;
+        }
+        #italy1{
+            background-color:#009246;
+            width: 100px;
+            height:3rem;
+
+        }
+        #italy2{
+            background-color:#ffffff;
+            width: 100px;
+            height:3rem;
+            
+        }
+        #italy3{
+            background-color:#ce2b37;
+            width: 100px;
+            height:3rem;
+        }
+        #flag5Name{
+            position: absolute;
+            top:50px;
+            left:20px;
+        }
+        #flag6{
+            margin: 10px;
+            position: relative;
+
+        }
+        #japan1{
+            background-color: white;
+            height: 3rem;
+           
+        }
+        #japan11{
+            position:absolute;
+            background-color: red;
+            border-radius: 50px;
+            height:2rem;
+            width:2rem;    
+            left:25px;
+            top:7px;    
+        }
+        #flag7{
+            margin:10px;
+            height:3rem;
+            background-color:#EE1C25;
+            position: relative;
+        }
+        #china1{
+            top: 5px;
+            left: 22px;
+            transform: rotate(54deg);
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+        }
+        #china1::before,  #china1::after{
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            left:-4px;
+        }
+        #china2{
+            top: 9px;
+            left: 28px;
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            transform: rotate(14deg);
+        }
+        #china2::before,  #china2::after{
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            left:-4px;
+        }
+        #china3{
+            top: 15px;
+            left: 30px;
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            transform: rotate(34deg);
+        }
+        #china3::before,  #china3::after{
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            left:-4px;
+        }
+        #china4{
+            top: 20px;
+            left: 23px;
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+        }
+        #china4::before,  #china4::after{
+            border-left:4px solid transparent;
+            border-bottom:3px solid  #FFFF00;
+            border-right:4px solid transparent;
+            left:-4px;
+        }
+        #china5{
+            position: absolute;
+            top: 16px;
+            left: 5px;
+            border-left:8px solid transparent;
+            border-bottom:6px solid #FFFF00;
+            border-right:8px solid transparent;
+        }
+        #china5::before,#china5::after{
+            border-left:8px solid transparent;
+            border-bottom:6px solid #FFFF00;
+            border-right:8px solid transparent;
+            left:-8px;
+
+        }
+        #flag7Name{
+            position: absolute;
+            top: 47px;
+            left: 16px;
+
+        }
+
+
+        #flag8{
+            margin:10px;
+        }
+        #poland1{
+            background-color: red;
+            height:1.5rem;
+
+        }
+        #poland2{
+            background-color: white;
+            height:1.5rem;
+        }
+        #flag9{
+            margin:10px;
+            display: grid;
+            grid-template-columns: repeat(2,2.5rem);
+            grid-template-rows: repeat(2,1.5rem);
+        }
+       
+        #panama1{
+            height: 100%;
+            width:100%;
+            position: relative;
+            background-color:#FFFFFF;
+
+        }
+        #panama11{
+            position: absolute;
+            top: 10px;
+            left: 11px;
+            transform: rotate(36deg);
+            border-left:8px solid transparent;
+            border-bottom:6px solid #072357;
+            border-right:8px solid transparent;
+            
+        }
+        #panama11::before,#panama11::after{
+            border-left:8px solid transparent;
+            border-bottom:6px solid #072357;
+            border-right:8px solid transparent;
+            left:-8px;
+
+        }
+        #panama2{
+            background-color:#DA121A;
+            height: 100%;
+            width:100%;
+                    
+        }
+        #panama3{
+            height: 100%;
+            width:100%;
+            background-color:#072357;
+                    
+        }
+        #panama4{
+            height: 100%;
+            width:100%;
+            position: relative;     
+            background-color:#FFFFFF;
+                    
+        }
+        #panama41{
+            position: absolute;
+            top: 11px;
+            left: 11px;
+            transform: rotate(-37deg);
+            border-left:8px solid transparent;
+            border-bottom:6px solid #DA121A;
+            border-right:8px solid transparent;
+                    
+        }
+        #panama41::before,#panama41::after{
+            border-left:8px solid transparent;
+            border-bottom:6px solid #DA121A;
+            border-right:8px solid transparent;
+            left:-8px;
+        }
+        #flag9Name{
+            margin-left: 10px;
+        }
+        #flag10{
+            display: flex;
+            height: 3rem;
+            width:5rem;
+            margin: 10px;
+            position: relative;
+
+        }
+        #stVincentGrenadines1{
+            width:25%;
+            background-color:#002674;
+            height: 3rem;
+        }
+        #stVincentGrenadines2{
+            width:50%;
+            background-color:#FCD022;
+            height: 3rem;
+            position: relative;
+
+        }
+        #stVincentGrenadines21{
+            position: absolute;
+            height:30px;
+            width:15px;
+            background-color:#007C2E;
+            transform: rotate3d(1,1,1,85deg);
+            top: 4px;
+            left: 3px;
+        }
+        #stVincentGrenadines22{
+            position: absolute;
+            height:30px;
+            width:15px;
+            background-color:#007C2E;
+            transform: rotate3d(1,1,1,85deg);
+            top: 3px;
+            left: 20px;
+        }
+        #stVincentGrenadines23{
+            position: absolute;
+            height:30px;
+            width:15px;
+            background-color:#007C2E;
+            transform: rotate3d(1,1,1,85deg);
+            top: 18px;
+            left: 11px;
+        }
+        #stVincentGrenadines3{
+            width:25%;
+            background-color:#007C2E;
+            height: 3rem;
+
+        }
+        #flag10Name
+        {
+            position: absolute;
+            top:50px;
+        }
+       
+
+       #flag11{
+        margin:10px;
+       }
+       #laos1{
+        background-color:#CE1126;
+        height:0.7rem;
+        }
+       #laos2{
+        background-color:#002868;
+        height:1.6rem;
+        position: relative;
+        }
+       #laos21{
+        border-radius: 20px;
+        background-color: white;
+        height: 1rem;
+        width: 1rem;
+        position: absolute;
+        top:5px;
+        left:40%
+       }
+
+       #laos3{
+        background-color:#CE1126;
+        height:0.7rem;
+       }
+       #flag12{
+        margin: 10px;
+       }
+       #finland1,#finland3{
+        display:flex;
+       }
+       #finland11,#finland31{
+        background-color: #FFFFFF;
+        width:2rem;
+       }
+
+       #finland12,#finland32{
+        background-color: #002F6C;
+        width:1rem;
+       }   
+
+       #finland13, #finland33{
+        background-color: #FFFFFF;
+        width:3rem
+       }
+       #finland2{
+        background-color: #002F6C;
+       }
+
+      
+       #flag13{
+        margin:10px;
+       }
+
+       #uae1,#uae2,#uae3{
+        display:flex;
+       }
+       #uae11,#uae21,#uae31{
+        background-color: #EF3340;
+        width:1.5rem;
+       }
+       #uae12{
+        background-color: #009739;
+       }
+       #uae22{
+        background-color:#FFFFFF;
+       }
+       
+       #uae32{
+        background-color:#000000;
+        
+       }
+       #flag14{
+        margin:10px;
+        position:relative;
+       }
+       #czechia1{
+        background-color:#FFFFFF ;
+        height: 1.5rem;
+
+       }
+       #czechia2{
+        background-color:#D7141A;
+        height: 1.45rem;
+       }
+       #czechia3{
+        height: 0;
+        width: 0;
+        border-left: 1.5rem solid transparent;
+        border-bottom: 2.5rem solid #11457E;
+        border-right: 1.5rem solid transparent;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 4px;
+        left: -4px;
+       }
+       #flag15{
+        margin:10px;
+       }
+       #flag15Container{
+        overflow: hidden;
+        position: relative;
+        height:3rem;
+        background-color: green;
+        width:5rem;
+
+       }
+       .triangle{
+        height: 0;
+        width: 0;
+        border-left: 20px solid transparent;
+        border-bottom: 45px solid black;
+        border-right: 20px solid transparent;
+       }
+       #jamaica1{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transform: rotate(90deg);
+       }
+       #jamaica2{
+            position: absolute;
+            top: 2px;
+            right: 3px;
+            transform: rotate(270deg);
+        }
+        .diagonal{
+            position: absolute;
+            background-color: yellow;
+            width: 5px;
+            height:95px
+        }
+        #jamaicad1{
+            background-color: yellow;
+            transform: rotate(300deg);
+            left: 37px;
+            top: -23px;
+        }
+        #jamaicad2{
+            transform: rotate(61deg);
+            right: 37px;
+            top: -23px;
+        }
+        #flag15Name{
+            margin-top: 20px;
+        }
+        #flag16{
+            margin:10px;
+            display:flex;
+            height:3rem;
+            position: relative;
+           
+        }
+        #qatar1{
+            background-color: white;
+            height: 2.95rem;
+            width:2rem
+        }
+        #qatar2{
+            height:2.95rem;
+            width:5rem;
+            background-color: #8A1538;
+            position: relative;
+        }
+        .smallTriangle{
+            height: 0px;
+            width:0px;
+            border-left: 4px solid transparent;
+            border-bottom: 15px solid white;
+            border-right: 4px solid transparent;
+            position: absolute;
+            transform: rotate(90deg);
+        }
+        #qatar21{
+           
+            left: 0px;
+            top: -4px;
+        }
+        #qatar22{
+            left: 0px;
+            top: 1px;
+        }
+
+        #qatar23{
+            left: 0px;
+            top: 6px;
+        }
+        #qatar24{
+            left: 0px;
+            top: 11px;
+        }
+        #qatar25{
+            left: 0px;
+            top: 16px;
+        }
+        #qatar26{
+            left: 0px;
+            top: 21px;
+        }
+        #qatar27{
+            left: 0px;
+            top: 26px;
+        }
+        #qatar28{
+            left: 0px;
+            top: 31px;
+        }
+        #qatar29{
+            left: 0px;
+            top: 36px;
+        }
+        #flag16Name{
+            position: absolute;
+            top:50px;
+            left:20px
+        }
+        #flag17{
+            margin:10px;
+        }
+        #switzerland1{
+            background-color:#DA291C;
+            height: 3rem;
+            position:absolute;
+        }
+        #switzerland11{
+            position: relative;
+            background-color: white;
+            transform: rotate(90deg);
+            width:2rem;
+            height:0.8rem;
+            left: 23px;
+            top: 17px;
+        }
+        #switzerland12{
+            position: relative;
+            background-color: white;
+            background-color: white;
+            width: 2rem;
+            height:0.8rem;
+            left: 23.5px;
+            top: 4px;
+           
+        }
+        #flag17Name{
+            position: absolute;
+            top:50px;
+        }
+
+        #flag18{
+               margin:10px;
+        }
+        #flag18Container{
+            overflow: hidden;
+            position:relative;
+            height: 3rem;
+        }
+        #kuwait1{
+            background-color:#007A3D;
+            height: 1rem;
+        }
+        #kuwait2{
+            background-color: #FFFFFF;
+            height: 1rem;
+
+        }
+        #kuwait3{
+            background-color:#CE1126;
+            height: 1rem;
+
+        }
+
+        #kuwait4{
+            position:absolute;
+            height: 0px;
+            width: 0px;
+            border-left: 17px solid transparent;
+            border-bottom: 17px solid black;
+            border-right: 17px solid transparent;
+            transform: rotate(90deg);
+            left: -9px;
+            top: 7px;
+            padding:9px;
+        }
+        #flag19{
+            margin:10px;
+        }
+        #maldives1{
+            background-color: red;
+            height:3rem;
+            position: relative;
+        }
+        #maldives11{
+            position: absolute;
+            height:2rem;
+            background-color: green;
+            width:4rem;
+            left: 8px;
+            top: 8px;
+
+        }
+        .crescent{
+            position: absolute;
+            height:25px;
+            width: 25px;
+            border-radius: 50%;
+            box-shadow: 0px 5px white;
+            transform: rotate(90deg);
+            left: 35px;
+            top: 12px;
+        }
+        #flag20{
+            margin:10px;
+        }
+        #flag20Container{
+            position: relative;
+            overflow: hidden;
+            height: 3rem;
+
+        }
+        #tansania1{
+            background-color: #1EB53A;
+            height:1rem;
+        }
+        #tansania2{
+            height: 1rem;
+            display: flex;
+        }
+        #tansania21{
+            background-color:  #1EB53A;
+        }  
+        #tansania22{
+            background-color:#00A3DD;
+        }
+
+        #tansania3{
+            background-color:#00A3DD;
+            height:1rem;
+            
+        }
+   
+        #tansania4{
+            position: absolute;
+            right: -8px;
+            top: 12px;
+            background-color: #FCD116;
+            transform: rotate(153deg);
+            width: 6rem;
+            height: 1.5rem;
+        }
+        #tansania5{
+            position: absolute;
+            right: -9px;
+            top: 16px;
+            background-color: 	#000000;
+            transform: rotate(153deg);
+            width:6rem;
+            height:1rem;
+        }
+        #flag21{
+            margin:10px;
+            background-color: red;
+            height:3rem;
+         
+        }
+        #tongo1{
+            position:relative;
+            height:1.5rem;
+            width: 1.5rem;
+            background-color: white;
+
+        }
+        #tongo11{
+            position: absolute;
+            width:1rem;
+            background-color: red;
+            height: 0.3rem;
+            top: 9px;
+            left: 3px;
+        }
+        #tongo12{
+            position: absolute;
+            width:1rem;
+            background-color: red;
+            height: 0.3rem;
+            top: 8px;
+            transform: rotate(90deg);
+            left: 3px;
+        }
+        #flag21Name{
+            margin-top: 40px;
+    
+        }
+        #flag22{
+            height: 3rem;
+            background-color: #0077C8;
+            margin:10px;
+            position:relative;
+        }
+        #saintlucia1{
+            position: absolute;
+            height:0px;
+            width:0px;
+            border-right: 15px solid  transparent;
+            border-bottom: 40px solid white;
+            border-left: 15px solid  transparent;
+            top: 4px;
+            left: 24px;            
+        }
+        #saintlucia2{
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            border-right: 13px solid transparent;
+            border-bottom: 35px solid black;
+            border-left: 13px solid transparent;
+            top: 7px;
+            left: 27px;
+
+        }
+        #saintlucia3{
+            position: absolute;
+            height:0px;
+            width:0px;
+            border-right: 15px solid  transparent;
+            border-bottom: 23px solid #FFD100;
+            border-left: 15px solid  transparent;
+            top: 21px;
+            left: 25px;
+        }
+        #flag22Name{
+            margin-top: 60px;
+        }
+        
+        #flag23{
+            margin: 10px;
+            position: relative;
+            height: 3rem;
+            background-color: red;
+        }
+        .star{
+            position: relative;
+            height: 0px;
+            width:0px;
+            border-right: 15px solid  transparent;
+            border-bottom: 10px solid #020201;
+            border-left: 15px solid  transparent;
+            transform: rotate(35deg);
+            left: 24px;
+            top: 18px;
+        }
+        .star:before,.star:after{
+            top:0px;
+            content: '';
+            position: absolute;
+            height: 0px;
+            width:0px;
+            left: -15px;
+            border-right: 15px solid  transparent;
+            border-bottom: 10px solid #020201;
+            border-left: 15px solid  transparent;
+        }
+        .star:before{
+            transform: rotate(-72deg);
+            transform-origin: 50% 50%;
+        }
+        .star:after{
+            transform: rotate(70deg);
+            transform-origin: 50% 50%;
+        }
+        #flag23Name{
+            margin-top: 50px;
+        }
+        #flag24{
+            margin: 10px;
+            display: flex;
+            
+        }
+        #pakistan1{
+            height: 3rem;
+            width: 1.5rem;
+            background-color: white;
+        }
+        #pakistan2{
+            width:3.5rem;
+            height: 3rem;
+            background-color:#115740;
+            position: relative;
+        }
+
+        .smallStar{ 
+            top: 15px;
+            left: 29px;
+            border-left:5px solid transparent ;
+            border-bottom:4px solid white ;
+            border-right:5px solid transparent ;
+            transform: rotate(3deg);
+        }
+        .smallStar::before,.smallStar::after{
+            left: -5px;
+            border-left:5px solid transparent ;
+            border-bottom:4px solid white ;
+            border-right:5px solid transparent ;
+
+        }
+       .smallStar:after{
+            transform: rotate(67deg);
+        }
+
+        #pakistan22{
+            position: absolute;
+            height: 38px;
+            width: 39px;
+            box-shadow: 5px 5px 0 white ;
+            transform: rotate(79deg);
+            top: -3px;
+            left: 16px;  
+        }
+        #flag24Name{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 10px;  
+        }
+   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Country Flags</h1>
+    </header>
+    <div class="wrapper">
+      <!-- Flag 1 Armenia -->
+      <div id="flag1">
+        <div id="armenia1"></div>
+        <div id="armenia2"></div>
+        <div id="armenia3"></div>
+        <p id="flag1Name">Armenia</p>
+      </div>
+      <!-- Flag 2 Benin -->
+      <div id="flag2">
+        <div id="benin1"></div>
+        <div id="benin2"></div>
+        <div id="benin3"></div>
+        <div id="benin4"></div>
+        <p id="flag2Name">Benin</p>
+      </div>
+      <!-- Flag 3 Cameroon -->
+      <div id="flag3">
+        <div id="cameroon1"></div>
+        <div id="cameroon2">
+            <div id="cameroon21" class="star smallStar"></div>
+        </div>
+        <div id="cameroon3"></div>
+        <p id="flag3Name">Cameroon</p>
+      </div>
+      <!-- Flag 4 Chile -->
+      <div id="flag4">
+            <div id="chile1"></div>
+            <div id="chile2"></div>
+            <div id="chile3"></div>
+            <div id="chile4"></div>
+            <div id="chile5" class="star"></div>
+            <p id="flag4Name">Chile</p>
+      </div>
+      <!-- Flag 5 Italy -->
+      <div id="flag5">
+        <div id="italy1"></div>
+        <div id="italy2"></div>
+        <div id="italy3"></div>
+        <p id="flag5Name">Italy</p>
+      </div>
+      <!-- Flag 6 Japan -->
+      <div id="flag6">
+        <div id="japan1">
+            <div id="japan11"></div>
+        </div>
+        <p id="flag6Name">Japan</p>
+      </div>
+      <!-- Flag 7 China -->
+      <div id="flag7">
+        <div id="china1" class="star smallStar"></div>
+        <div id="china2" class="star smallStar"></div>
+        <div id="china3" class="star smallStar"></div>
+        <div id="china4" class="star smallStar"></div>
+        <div id="china5" class="star "></div>
+        <p id="flag7Name">China</p>
+      </div>
+      <!-- Flag8 Poland -->
+      <div id="flag8">
+        <div id="poland1"></div>
+        <div id="poland2"></div>
+        <p id="flag8Name">Poland</p>
+      </div>
+      <!-- Flag 9 Panama -->
+      <div id="flag9">
+            <div id="panama1">
+                <div id="panama11" class="star smallStar"></div>
+            </div>
+            <div id="panama2"></div>
+            <div id="panama3"></div>
+            <div id="panama4">
+                <div id="panama41" class="star smallStar"></div>
+            </div>
+            <p id="flag9Name">Panama</p>
+      </div>  
+      <!-- Flag 10 St Vincent Grenadines-->
+      <div id="flag10">
+            <div id="stVincentGrenadines1"></div>
+            <div id="stVincentGrenadines2">
+                <div id="stVincentGrenadines21"></div>
+                <div id="stVincentGrenadines22"></div>
+                <div id="stVincentGrenadines23"></div>
+            </div>
+            <div id="stVincentGrenadines3"></div>
+            <p id="flag10Name">St Vincent Grenadines</p>
+         
+      </div>
+      <!-- Flag 11 Laos -->
+      <div id="flag11">
+            <div id="laos1"></div>
+            <div id="laos2"><div id="laos21"></div></div>
+            <div id="laos3"></div>
+            <p id="flag11Name">Laos</p>
+      </div>
+      <!-- Flag 12 Finland -->
+      <div id="flag12">
+        <div id="finland1">
+            <div id="finland11"></div>
+            <div id="finland12"></div>
+            <div id="finland13"></div>
+        </div>
+        <div id="finland2"></div>
+        <div id="finland3">
+            <div id="finland31"></div>
+            <div id="finland32"></div>
+            <div id="finland33"></div>
+        </div>
+        <p id="flag12Name">Finland</p>
+      </div>
+      <!-- Flag 13 UAE -->
+       <div id="flag13">
+         <div id="uae1">
+            <div id="uae11"></div>
+            <div id="uae12"></div>
+          </div>
+          <div id="uae2">
+            <div id="uae21"></div>
+            <div id="uae22"></div>
+          </div>
+          <div id="uae3">
+            <div id="uae31"></div>
+            <div id="uae32"></div>
+          </div>
+          <p id="flag13Name">UAE</p>
+       </div>
+      <!-- Flag 14 Czechia -->
+       <div id="flag14">
+        <div id="czechia1"></div>
+        <div id="czechia2"></div>
+        <div id="czechia3"></div>
+        <p id="flag14Name">Czechia</p>
+       </div>
+         <!-- Flag 15 Jamaica -->
+       <div id="flag15">
+        <div id="flag15Container">
+         <div id="jamaica1" class="triangle"></div>
+         <div id="jamaica2" class="triangle"></div>
+         <div id="jamaicad1" class="diagonal"></div>
+         <div id="jamaicad2"class="diagonal"></div>
+        </div>   
+        <p id="flag15Name">Jamaica</p>    
+       </div>
+       <!-- Flag  16 Qatar-->
+       <div id="flag16"> 
+           <div id="qatar1"></div>
+           <div id="qatar2"> 
+            <div id="qatar21" class="smallTriangle"></div>
+            <div id="qatar22" class="smallTriangle"></div>
+            <div id="qatar23" class="smallTriangle"></div>
+            <div id="qatar24" class="smallTriangle"></div>
+            <div id="qatar25" class="smallTriangle"></div>
+            <div id="qatar26" class="smallTriangle"></div>
+            <div id="qatar27" class="smallTriangle"></div>
+            <div id="qatar28" class="smallTriangle"></div>
+            <div id="qatar29" class="smallTriangle"></div>
+           </div>
+           <p id="flag16Name">Qatar</p>
+       </div>
+       <!-- Flag 17 Switzerland -->
+       <div id="flag17">
+            <div id="switzerland1">
+                <div id="switzerland11"></div>
+                <div id="switzerland12"></div>
+                <p id="flag17Name">Switzerland</p>
+            </div>   
+        </div>
+        <!-- Flag 18 Kuwait -->
+         <div id="flag18">
+            <div id="flag18Container">
+                <div id="kuwait1"></div>
+                <div id="kuwait2"></div>
+                <div id="kuwait3"></div>
+                <div id="kuwait4"></div>
+            </div>
+            <p id="flag18Name">Kuwait</p>
+         </div>
+        <!-- Flag 19 Maldives -->
+         <div id="flag19"> 
+            <div id="maldives1">
+                <div id="maldives11"></div>
+                <div id="maldives12" class="crescent"></div>
+            </div>
+            <p id="flag19Name">Maldives</p>
+        </div>
+        <!-- Flag 20  Tansania-->
+        <div id="flag20">
+            <div id="flag20Container">
+             <div id="tansania1"></div>
+             <div id="tansania2">
+                    <div id="tansania21"></div>
+                    <div id="tansania22"></div>
+             </div>
+             <div id="tansania3"></div>
+             <div id="tansania4"></div>
+             <div id="tansania5"></div>
+            </div>    
+            <p id="flag20Name">Tansania</p>
+        </div>
+        <!-- Flag 21 Tongo -->
+        <div id="flag21">
+            <div id ="tongo1">
+                <div id="tongo11"></div>
+                <div id="tongo12"></div>
+            </div>
+            <p id="flag21Name">Tongo</p> 
+        </div>
+        <!-- Flag 22 Saint Lucia -->
+        <div id="flag22">
+            <div id="saintlucia1"></div>
+            <div id="saintlucia2"></div>
+            <div id="saintlucia3"></div>
+            <p id="flag22Name">Saint Lucia</p>
+        </div>
+        <!-- Flag 23 Vietnam -->
+        <div id="flag23">
+            <div id="vietnamstar" class="star"></div>
+            <p id="flag23Name">Vietnam</p>
+        </div>
+        <!-- Flag 24 Pakistan -->
+        <div id="flag24">
+                <div id="pakistan1"></div>
+                <div id="pakistan2">      
+                    <div id="pakistan21" class="star smallStar"></div>
+                    <div id="pakistan22" class="crescent"></div>
+                </div>
+                <p id="flag24Name">Pakistan</p>
+        </div>
+
+    </div>
+</body>
+</html>
