@@ -5,6 +5,6 @@ Project Structure
 index.html: This file contains the HTML structure for the webpage and also css internally.
 
 Getting Started
-Clone the repository: git clone <repository-url>
+Clone the repository: git clone https://github.com/EKishore16/FlagsUsingHtmlCss.git
 Open index.html in a web browser: View the webpage in your preferred browser.Flags Used
 The flags used in this project are selected randomly from various countries to showcase diversity and representation.   
